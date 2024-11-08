@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Body Mass Index</title>
+</head>
+<body>
+    <div class="w-[360px] h-[500px] text-center my-[100px] mx-auto border py-4 px-5 rounded-xl bg-[#008080]">
+        <h1 class="text-center tracking-widest"><span class="text-4xl font-bold">B</span>ody <span class="text-4xl font-bold">M</span>ass <span class="text-4xl font-bold">I</span>ndex</h1>
+        <p class="uppercase text-center tracking-widest mb-3">Calculater</p>
+
+        <div class="flex items-center gap-2 w-400px]">
+            <input id="weight" placeholder="Enter weight(in kilograms)" value="" type="number" class="focus:outline-black w-[90%] rounded-md border border-black py-2 px-1">
+            <h3> KG</h3>
+        </div><br>
+        <div class="flex items-center gap-2 w-400px]">
+            <input id="height" placeholder="Enter height(in meters)" value="" type="text" class="w-[90%] focus:outline-black border-black rounded-md border py-2 px-1">
+            <h3> METERS</h3>
+        </div>
+        <button onclick="calclulateBMI()" class="w-full bg-black py-4 px-2 text-white rounded-lg mt-6">Calculate</button>
+        <div class="bg-teal-500  mt-6 text-bold text-xl rounded-md w-full text-black" id="result"></div>
+    </div>
+    
+    <script src="./app.js"></script>
+</body>
+</html>
