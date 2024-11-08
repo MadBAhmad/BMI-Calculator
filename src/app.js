@@ -33,6 +33,10 @@ if (!weight || !height){
 
  document.getElementById('result').textContent = `Your BMI is ${bmi.toFixed(2)} - ${category}`;
 
+ setTimeout (() => {
+    document.getElementById('weight').value = '';
+    document.getElementById('height').value = '';
+ }, 1000);
  
 }
 
